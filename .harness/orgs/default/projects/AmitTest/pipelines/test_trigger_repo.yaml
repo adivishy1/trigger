@@ -20,8 +20,8 @@ pipeline:
                   timeout: 1d
                   spec:
                     approvalMessage: |-
-                      Please review the following information asd
-                      and approve the pipeline progression de
+                      Please review the following information asd delegate
+                      and approve the pipeline progression de sdf
                     includePipelineExecutionHistory: true
                     approvers:
                       minimumCount: 1
