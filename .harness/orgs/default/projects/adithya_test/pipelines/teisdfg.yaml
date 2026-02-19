@@ -1,0 +1,32 @@
+pipeline:
+  name: teisdfg
+  identifier: teisdfg
+  projectIdentifier: adithya_test
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: sdfg
+        identifier: sdfg
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: dgfs
+                  identifier: dgfs
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups: <+input>
+                    isAutoRejectEnabled: false
+                    approverInputs: []
+        tags: {}
