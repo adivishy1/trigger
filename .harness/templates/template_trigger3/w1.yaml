@@ -1,0 +1,19 @@
+template:
+  name: template trigger3
+  identifier: template_trigger3
+  versionLabel: w1
+  type: Step
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      executionTarget: {}
+      delegateSelectors: []
+      source:
+        type: Inline
+        spec:
+          script: echo 123
+      environmentVariables: []
+      outputVariables: []
