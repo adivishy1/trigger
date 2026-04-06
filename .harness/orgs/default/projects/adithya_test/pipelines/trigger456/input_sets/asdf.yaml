@@ -1,0 +1,21 @@
+inputSet:
+  name: asdf
+  identifier: asdf
+  orgIdentifier: default
+  projectIdentifier: adithya_test
+  pipeline:
+    identifier: trigger456
+    stages:
+      - stage:
+          identifier: sdfg
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: sdgf
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users
