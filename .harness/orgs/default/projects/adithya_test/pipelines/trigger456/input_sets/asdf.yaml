@@ -1,5 +1,6 @@
 inputSet:
   name: asdf
+  tags: {}
   identifier: asdf
   orgIdentifier: default
   projectIdentifier: adithya_test
@@ -15,6 +16,7 @@ inputSet:
                 - step:
                     identifier: sdgf
                     type: HarnessApproval
+                    timeout: 1d
                     spec:
                       approvers:
                         userGroups:
