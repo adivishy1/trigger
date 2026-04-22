@@ -1,0 +1,21 @@
+inputSet:
+  name: IS 2
+  identifier: IS_2
+  orgIdentifier: default
+  projectIdentifier: adithya_test
+  pipeline:
+    identifier: test_input_set
+    stages:
+      - stage:
+          identifier: sdf
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: fds
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users
