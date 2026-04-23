@@ -1,5 +1,6 @@
 inputSet:
   name: IS 2
+  tags: {}
   identifier: IS_2
   orgIdentifier: default
   projectIdentifier: adithya_test
@@ -19,3 +20,4 @@ inputSet:
                       approvers:
                         userGroups:
                           - account._account_all_users
+                      approvalMessage: IS 2
