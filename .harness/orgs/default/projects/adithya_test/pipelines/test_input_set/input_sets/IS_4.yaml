@@ -1,5 +1,6 @@
 inputSet:
   name: IS 4
+  tags: {}
   identifier: IS_4
   orgIdentifier: default
   projectIdentifier: adithya_test
@@ -16,7 +17,8 @@ inputSet:
                     identifier: fds
                     type: HarnessApproval
                     spec:
-                      approvalMessage: IS 4 master
+                      approvalMessage: IS 4 master-demo
                       approvers:
                         userGroups:
                           - account.AccountAdmin
+  isInlineHCEntity: false
