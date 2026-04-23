@@ -1,0 +1,22 @@
+inputSet:
+  name: IS 4
+  identifier: IS_4
+  orgIdentifier: default
+  projectIdentifier: adithya_test
+  pipeline:
+    identifier: test_input_set
+    stages:
+      - stage:
+          identifier: sdf
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: fds
+                    type: HarnessApproval
+                    spec:
+                      approvalMessage: IS 4 master
+                      approvers:
+                        userGroups:
+                          - account.AccountAdmin
