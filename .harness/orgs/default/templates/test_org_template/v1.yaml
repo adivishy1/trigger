@@ -1,0 +1,28 @@
+template:
+  name: test org template
+  identifier: test_org_template
+  versionLabel: v1
+  type: Stage
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: sfd
+              identifier: sfd
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: |-
+                  Please review the following information
+                  and approve the pipeline progression
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: <+input>
+                isAutoRejectEnabled: false
+                approverInputs: []
