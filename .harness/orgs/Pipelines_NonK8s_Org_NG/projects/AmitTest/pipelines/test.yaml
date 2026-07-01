@@ -30,3 +30,13 @@ pipeline:
                     isAutoRejectEnabled: false
                     approverInputs: []
         tags: {}
+        failureStrategies:
+          - onFailure:
+              errors: []
+              action:
+                type: ManualIntervention
+                spec:
+                  timeout: 10m
+                  onTimeout:
+                    action:
+                      type: Abort
